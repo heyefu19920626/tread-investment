@@ -6,9 +6,13 @@
 
     <groupId>org.example</groupId>
     <artifactId>tread-investment</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
 
     <description>趋势投资</description>
+    <modules>
+        <module>eureka-server</module>
+    </modules>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
