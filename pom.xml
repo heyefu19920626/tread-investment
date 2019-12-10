@@ -12,6 +12,7 @@
     <description>趋势投资</description>
     <modules>
         <module>eureka-server</module>
+        <module>external-data-service</module>
     </modules>
 
     <properties>
