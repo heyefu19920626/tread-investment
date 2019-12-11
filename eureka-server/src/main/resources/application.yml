@@ -5,13 +5,23 @@ spring:
     name: eureka-server
 
 eureka:
+  dashboard:
+    # 控制台路径
+    path: /dashboard
+    # 启用控制台
+    enabled: true
   instance:
     hostname: localhost
+    #    有问题
+    #    environment: dev
+    #    data-center-info: cloud
   client:
-    register-with-eureka: false
+    # 注册到eureka
+    register-with-eureka: true
     service-url:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
     fetch-registry: false
   server:
-    enable-self-preservation: false
-
+    # 开启自我保护模式
+    enable-self-preservation: true
+    renewal-percent-threshold: 0.49
